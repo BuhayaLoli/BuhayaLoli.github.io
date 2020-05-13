@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+background: #757575;
+font-family: "Calibri";
+user-select: none;
+}
+.main {
+  background: #fff;
+  border: 4px solid grey;
+  height: 700px;
+  width: 1000px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.container{
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1100px
+}
+.menu{
+  display: flex;
+  align-items: center;
+  font-size: 60px;
+  color: #5d9c5f;
+  border-bottom: 3px solid grey;
+  overflow: hidden;
+  height: 100px;
+  background: ;
+}
+#cannabis{
+  position: absolute;
+  color:#3e8241;
+  font-size: 70px;
+  animation: cannabis 1s linear infinite;
+  visibility: hidden;
+}
+@keyframes cannabis {
+0%{
+  transform: rotate(0deg);
+}
+50%{
+  transform: rotate(180deg);
+}
+100%{
+  transform: rotate(360deg);
+}
+}
+#score{
+margin-left: 10px;
+}
+#speed{
+  margin-left: 400px;
+}
+#GameOver, #main_menu{
+  position: absolute;
+  border: 4px solid grey;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  height: 400px;
+  width: 300px;
+  text-align: center;
+  margin-top: -200px;
+  margin-left: -150px;
+  z-index: 999;
+  background: #D3D3D3;
+  visibility: hidden;
+}
+
+.button{
+color:#3e8241;
+background: #3CB371;
+border-radius: 5px;
+border: 2px solid grey;
+padding: 10px;
+margin:0 10px;
+font-size: 50px;
+margin-top: 170px;
+}
+.button2{
+  color:#292929;
+  background: gray;
+  border-radius: 5px;
+  border: 2px solid #292929;
+  padding: 10px;
+  margin:0 20px;
+  font-size: 20px;
+  margin-top: 100px;
+}
+
+
+.title{
+  color: #3e8241;
+  font-size: 50px;
+}
+
+#record{
+  font-size: 30px;
+}
+#scoreRES{
+  font-size: 30px;
+}
+#main_menu{
+  visibility: visible;
+}
